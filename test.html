@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html lang="en">
+    	<head>
+        	<meta charset="utf-8" />
+        	<title>cloudControl Highscore Submitter</title>
+        	<style media="screen">
+        	html {font: 62.5%/20pt "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;}
+        	body {
+            background: url('img/noise-grey.gif') repeat scroll 0 0 #313233;
+            color: #fff;
+            font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+            font-size: 12px;
+            font-size: 1.2rem;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            width: 100%;
+          }
+          a, a:visited, a:active {color: #00aeef}
+          #content{
+            background: url('img/logo.png') no-repeat center top;
+            display: inline-block;
+            margin: 10% auto 0px auto;
+            padding: 110px 0px 0px 0px;
+
+            /*width: 500px;*/
+          }
+          form {text-align: center; width:100%;}
+          input {font-size: 16px; font-size: 1.6rem;}
+          h1 {font-size: 40px; font-size: 4rem;}
+          p {font-size: 16px; font-size: 1.6rem;}
+          .smallscript {width: 500px; font-size:10pt; line-height:12px; text-align:center;}
+        </style>
+    	</head>
+    	<body>
+    	<div id="content" class="box">
+
+	
+
+	<form method=post action=submitscore.php><h1>( Submit your score )</h1><p>
+	Nickname (this is the only thing visible in the high score list):<br/> <input type=text name=nick value='".$_POST['nick']."'><br/>
+	Real Name: <br/><input type=text name=realname value='".$_POST['realname']."'><br/>
+	eMail: <input type=text name=email value='".$_POST['email']."'><br/>
+	<input type=hidden name='trans' value='thisisacow'><br/>
+	<div class=smallscript>cloudControl loves developers. We only use the entered data for purpose of this contest. After the conference, it will be deleted. If you wan't cloudControl to contact you, please sign up for the newsletter or follow us on Facebook or Twitter.</div><br/>
+	<input type=submit value='Click here to submit your score!'></p>
+</div></body></html>
